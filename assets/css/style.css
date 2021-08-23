@@ -8,6 +8,21 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+::-webkit-scrollbar-track {
+    background-color: #863800;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #ff842c;
+    border-radius: 9px; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ef6603; 
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -77,15 +92,12 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  background: rgba(42, 44, 57, 0.9);
+  background: rgb(42, 44, 57);
 }
 
-#header.header-transparent {
-  background: transparent;
-}
 
 #header.header-scrolled {
-  background: rgba(42, 44, 57, 0.9);
+  background: rgb(42, 44, 57);
 }
 
 #header .logo h1 {
@@ -98,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo h1 a, #header .logo h1 a:hover {
-  color: #fff;
+  color: #ef6603;
   text-decoration: none;
 }
 
@@ -137,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 5px 15px 7px 15px;
   margin-left: 5px;
   font-size: 14px;
-  color: #fff;
+  color: #ef6603;
   white-space: nowrap;
   transition: 0.3s;
   border-radius: 50px;
@@ -150,7 +162,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  background: #ef6603;
+  background-color: lightblue;
 }
 
 .navbar .dropdown ul {
@@ -220,7 +232,7 @@ h1, h2, h3, h4, h5, h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: #ef6603;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -334,7 +346,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   text-align: center;
   position: relative;
-  height: 70vh;
+  height: 170vh;
   padding-top: 60px;
 }
 
@@ -733,7 +745,7 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
-  padding: 30px;
+  padding: 40px;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
@@ -750,8 +762,10 @@ section {
 }
 
 .services .icon {
+
   position: absolute;
-  left: -20px;
+  right: 10px;
+  left: 10px;
   top: calc(50% - 30px);
 }
 
@@ -762,7 +776,7 @@ section {
 }
 
 .services .title {
-  margin-left: 40px;
+  margin-left: 55px;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
@@ -779,7 +793,7 @@ section {
 
 .services .description {
   font-size: 14px;
-  margin-left: 40px;
+  margin-left: 55px;
   line-height: 24px;
   margin-bottom: 0;
 }
@@ -1055,9 +1069,43 @@ section {
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
+
+#comp-row{
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.row-item{
+  border: 2px solid #ef6603; 
+  border-radius: 12px;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 0 30px #1b19198a;
+  margin: 25px;
+  padding: 25px 15px;
+  transition-duration: .4s;
+}
+
+.row-item h1{
+  font-size: 25px;
+  color: #ef6603;
+}
+
+.row-item img{
+  max-width: 70%;
+  border-radius: 12px;
+  box-shadow: -2px 2px 5px #1b19198a;
+}
+
+.pricing .row{
+  justify-content: center;
+}
+
 .pricing .box {
-  padding: 20px;
-  background: #fff;
+  align-items: center;
+  background: #FFA07A;
   text-align: center;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
   border-radius: 5px;
@@ -1067,20 +1115,11 @@ section {
 
 .pricing h3 {
   font-weight: 400;
-  margin: -20px -20px 25px -20px;
-  padding: 30px 15px;
+  padding: 20px 15px;
   font-size: 18px;
   font-weight: 600;
   color: #777777;
   background: #f8f8f8;
-}
-
-.pricing h4 {
-  font-size: 36px;
-  color: #ef6603;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 20px;
 }
 
 .pricing h4 sup {
@@ -1166,70 +1205,7 @@ section {
   color: #fff;
 }
 
-/*--------------------------------------------------------------
-# F.A.Q
---------------------------------------------------------------*/
-.faq {
-  padding: 60px 0;
-}
 
-.faq .faq-list {
-  padding: 0;
-  list-style: none;
-}
-
-.faq .faq-list li {
-  border-bottom: 1px solid #ececf1;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-}
-
-.faq .faq-list .question {
-  display: block;
-  position: relative;
-  font-family: #ef6603;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
-  padding-left: 25px;
-  cursor: pointer;
-  color: #bd5102;
-  transition: 0.3s;
-}
-
-.faq .faq-list i {
-  font-size: 16px;
-  position: absolute;
-  left: 0;
-  top: -2px;
-}
-
-.faq .faq-list p {
-  margin-bottom: 0;
-  padding: 10px 0 0 25px;
-}
-
-.faq .faq-list .icon-show {
-  display: none;
-}
-
-.faq .faq-list .collapsed {
-  color: black;
-}
-
-.faq .faq-list .collapsed:hover {
-  color: #ef6603;
-}
-
-.faq .faq-list .collapsed .icon-show {
-  display: inline-block;
-  transition: 0.6s;
-}
-
-.faq .faq-list .collapsed .icon-close {
-  display: none;
-  transition: 0.6s;
-}
 
 /*--------------------------------------------------------------
 # Team
@@ -1288,7 +1264,9 @@ section {
 }
 
 .team .member .member-info {
-  padding: 25px 15px;
+  display: block;
+  word-wrap: break-word;
+  padding: 25px 25px;
 }
 
 .team .member .member-info h4 {
