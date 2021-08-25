@@ -9,6 +9,6 @@ O material do site foi pego do site <b>BootstrapMade</b> e modificado pelos inte
   <li>Alisson Soares</li>
   </ul>
   
-Você pode acessar o site clicando <a href="https://quartetoetec.github.io/livrodigital/">aqui</a>! 
+<b>Você pode acessar o site clicando <a href="https://quartetoetec.github.io/livrodigital/">aqui</a>!</b> 
 
 <hr>
