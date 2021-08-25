@@ -169,7 +169,7 @@ section {
 
 .section-title h2::after {
   content: "";
-  width: 85%;
+  width: 30%;
   height: 1px;
   display: inline-block;
   background: #fd9042;
@@ -796,21 +796,23 @@ section {
 
 .teach-item{
   box-shadow: 0 0 30px rgb(112, 111, 111);
-  width: 260px;
+  width: 225px;
   margin: 20px;
-  padding-top: 15px;
   align-items: center;
-  border-radius: 12px;
-  height: 345px;
+  border-radius: 8px;
+  height: 325px;
+  overflow: hidden;
+  transition: transform .3s;
+}
+.teach-item:hover{
+  transform: scale(1.03);
 }
 .teach-item hr{
   color: #d35a09;
   height: 2px;
 }
 .teach-item img{
-  border-radius: 7px;
-  width: 180px;
-  box-shadow: 0 0 4px rgb(61, 60, 60);
+  width: 225px;
   display: flex;
   margin: 0 auto
 }
@@ -818,14 +820,14 @@ section {
 .teach-item h3{
   font-weight: bold;
   align-items: center;
+  padding-left: 15px;
   margin-top: 15px;
-  padding-left: 40px;
   text-transform: uppercase;
   font-size: 17px;
 }
 
 .teach-item span{
-  padding-left: 40px;
+  padding-left: 15px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
@@ -881,6 +883,7 @@ section {
 }
 
 .portfolio .portfolio-item .portfolio-img {
+  border-radius: 11px;
   overflow: hidden;
 }
 
@@ -891,10 +894,11 @@ section {
 .portfolio .portfolio-item .portfolio-info {
   opacity: 0;
   position: absolute;
-  left: 15px;
+  left: 13px;
   bottom: 0;
+  border-radius: 11px;
   z-index: 3;
-  right: 15px;
+  right: 13px;
   transition: all ease-in-out 0.3s;
   background: rgba(0, 0, 0, 0.5);
   padding: 10px 15px;
@@ -914,117 +918,12 @@ section {
   margin-bottom: 0;
 }
 
-.portfolio .portfolio-item .portfolio-info .preview-link, .portfolio .portfolio-item .portfolio-info .details-link {
-  position: absolute;
-  right: 40px;
-  font-size: 24px;
-  top: calc(50% - 18px);
-  color: #fff;
-  transition: 0.3s;
-}
-
-.portfolio .portfolio-item .portfolio-info .preview-link:hover, .portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: #fd9f5b;
-}
-
-.portfolio .portfolio-item .portfolio-info .details-link {
-  right: 10px;
-}
-
-.portfolio .portfolio-item .portfolio-links {
-  opacity: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 3;
-  position: absolute;
-  transition: all ease-in-out 0.3s;
-}
-
-.portfolio .portfolio-item .portfolio-links a {
-  color: #fff;
-  margin: 0 2px;
-  font-size: 28px;
-  display: inline-block;
-  transition: 0.3s;
-}
-
-.portfolio .portfolio-item .portfolio-links a:hover {
-  color: #fd9f5b;
-}
-
 .portfolio .portfolio-item:hover .portfolio-img img {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
-}
-
-/*--------------------------------------------------------------
-# MAIS DETALHES - ESCOLA
---------------------------------------------------------------*/
-
-.portfolio-details {
-  padding-top: 40px;
-}
-
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #ef6603;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #ef6603;
-}
-
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(42, 44, 57, 0.08);
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li + li {
-  margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
 }
 
 /*--------------------------------------------------------------
@@ -1083,48 +982,6 @@ section {
   padding-bottom: 8px;
 }
 
-.contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .error-message br + br {
-  margin-top: 25px;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-
 .contact .php-email-form input, .contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
@@ -1152,24 +1009,6 @@ section {
   background: #fc8129;
 }
 
-@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -1193,8 +1032,7 @@ section {
 }
 
 #footer p {
-  font-size: 15;
-  font-style: italic;
+  font-size: 15px;
   padding: 0;
   margin: 0 0 40px 0;
 }
@@ -1204,7 +1042,7 @@ section {
 }
 
 #footer .social-links a {
-  font-size: 18px;
+  font-size: 30px;
   display: inline-block;
   background: #ef6603;
   color: #fff;
@@ -1213,8 +1051,8 @@ section {
   margin-right: 4px;
   border-radius: 50%;
   text-align: center;
-  width: 36px;
-  height: 36px;
+  width: 48px;
+  height: 48px;
   transition: 0.3s;
 }
 
