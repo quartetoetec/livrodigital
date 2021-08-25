@@ -69,11 +69,11 @@
     background-color: #2f1502;
 }
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 7px;
 }
 ::-webkit-scrollbar-thumb {
     background-color: #ef6603;
-    border-radius: 9px; 
+    border-radius: 4px; 
 }
 ::-webkit-scrollbar-thumb:hover {
     background-color: #b6530c; 
@@ -786,26 +786,38 @@ section {
 # PROFESSORES
 --------------------------------------------------------------*/
 
+.pricing{
+  background: linear-gradient(0deg, #2a2c39 0%, #33364a 100%);
+}
+.pricing .section-title h2, .about .section-title p{
+  color: aliceblue;
+}
+.pricing p, .about li{
+  color: white;
+}
 .teach-rows{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 .teach-item{
-  box-shadow: 0 0 24px rgb(112, 111, 111);
-  width: 225px;
+  box-shadow: 0 0 12px rgb(0, 0, 0);
+  width: 260px;
   margin: 25px;
   align-items: center;
   border-radius: 5px;
-  height: 325px;
+  height: 370px;
+  background-color: rgb(255, 255, 255);
   overflow: hidden;
-  transition: transform .3s;
+  transition: transform .6s;
 }
 .teach-item:hover{
-  transform: scale(1.01);
+  transform: scale(1.02);
+
+  box-shadow: 0 0 17px rgb(0, 0, 0);
 }
 .teach-item img{
-  width: 225px;
+  width: 260px;
   display: flex;
   margin: 0 auto
 }
