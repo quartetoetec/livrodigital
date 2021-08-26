@@ -414,7 +414,7 @@ section {
 --------------------------------------------------------------*/
 
 .about {
-  padding-top: 110px;
+  padding-top: 90px;
   background: linear-gradient(0deg, #2a2c39 0%, #33364a 100%);
 }
 
@@ -485,44 +485,60 @@ section {
 # SINOPSES
 --------------------------------------------------------------*/
 
-.services .icon-box {
-  padding: 40px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 0 2px 29px 0 rgba(68, 88, 144, 0.12);
-  width: 100%;
-  height: 100%;
+.sin-rows{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
-.services .icon-box:hover {
-  box-shadow: 0 2px 35px 0 rgba(68, 88, 144, 0.2);
-}
-
-
-.services .title {
+.sin-items{
+  box-shadow: 0 0 24px rgb(95, 94, 94);
+  width: 360px;
+  border-radius: 12px;
   text-align: center;
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
+  margin: 20px;
+  overflow: hidden;
 }
-
-.services .title a {
-  color: #2a2c39;
-  transition: ease-in-out 0.3s;
+.sin-items h4{
+  text-align: center;
+  color: rgb(185, 63, 14);
+  font-weight: 600;
+  padding-top: 20px;
+  text-transform: uppercase;
+  font-size: 16px;
 }
-
-.services .title a:hover {
-  color: #ef6603;
-}
-
-.services .description {
-  text-align: start;
-  text-indent: 15px;
-  font-size: 14px;
-  line-height: 24px;
+.sin-desc{
+  margin-top: -35px;
+  background-color: rgb(219, 84, 26);
   margin-bottom: 0;
+  padding: 12px 0;
+  transform: translateY(35px);
+  height: 80px;
+  transition: all .4s;
+}
+.sin-desc:hover{
+  transform: translateY(30px);
+  background-color: rgb(156, 60, 18);
+}
+.sin-desc:hover span{
+  padding-top: 14px;
+}
+.sin-desc span{
+  color: white;
+  font-weight: 600;
+}
+.sin-items p{
+  width: 80%;
+  padding-top: 6px;
+  font-size: 15px;
+  text-align: justify;
+  hyphens: auto;
+  margin-left: 10%;
+  text-indent: 14px;
+}
+.sin-icon{
+  font-size: 30px;
+  color:rgb(219, 84, 26);
+  padding: 10px 0;
 }
 
 /*--------------------------------------------------------------
@@ -709,6 +725,8 @@ section {
 
 .team-rows{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .team .member {
@@ -802,7 +820,6 @@ section {
   flex-wrap: wrap;
 }
 .teach-item{
-  box-shadow: 0 0 12px rgb(0, 0, 0);
   width: 260px;
   margin: 25px;
   align-items: center;
@@ -810,12 +827,10 @@ section {
   height: 370px;
   background-color: rgb(255, 255, 255);
   overflow: hidden;
-  transition: transform .6s;
+  transition: transform .3s;
 }
 .teach-item:hover{
-  transform: scale(1.02);
-
-  box-shadow: 0 0 17px rgb(0, 0, 0);
+  transform: translateY(-5px);
 }
 .teach-item img{
   width: 260px;
@@ -889,11 +904,12 @@ section {
 
 .portfolio .portfolio-item .portfolio-img {
   border-radius: 11px;
+  box-shadow: 0 0 30px rgb(107, 106, 106);
   overflow: hidden;
 }
 
 .portfolio .portfolio-item .portfolio-img img {
-  transition: 0.8s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .portfolio .portfolio-item .portfolio-info {
@@ -901,11 +917,12 @@ section {
   position: absolute;
   left: 13px;
   bottom: 0;
-  border-radius: 11px;
   z-index: 3;
   right: 13px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
   transition: ease-in-out 0.3s;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   padding: 10px 15px;
 }
 
@@ -918,13 +935,14 @@ section {
 }
 
 .portfolio .portfolio-item .portfolio-info p {
-  color: #fedac0;
+  color: #be9371;
   font-size: 14px;
   margin-bottom: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 .portfolio .portfolio-item:hover .portfolio-img img {
-  transform: scale(1.1);
+  transform: scale(1.09);
 }
 
 .portfolio .portfolio-item:hover .portfolio-info {
