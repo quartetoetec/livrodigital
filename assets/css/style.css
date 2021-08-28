@@ -38,6 +38,100 @@
   }
 }
 
+@media (max-width: 1200px){
+  .about{
+    margin-top: 6%;
+  }
+}
+@media (max-width: 767px){
+  .about{
+    margin-top: 10%;
+  }
+  .team-rows .team-item .team-social{
+    opacity: 1;
+    position: absolute;
+    display: flex;
+    bottom: 22%;
+    left: 50%;
+    transition: all .4s;
+    transform: translateX(-50%);
+  }
+  .team-social .icon{
+    display: none;
+  }
+  .team-social-mobile{
+    font-size: 40px;
+    display: flex;
+    margin: 5px 0 0 0;
+    justify-content: space-evenly;
+  }
+  .team-desc{
+    text-align: center;
+    padding: 12px 15px;
+  }
+  .team-desc h2{
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 8px 0;
+  }
+  .team-desc span{
+    font-size: 13px;
+    margin: 0
+  }
+}
+@media (max-width: 570px){
+  .about{
+    margin-top: 15%;
+  }
+}
+@media (max-width: 480px){
+  .pricing .container{
+    width: 90%;
+  }
+  .teach-rows .teach-item{
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 225px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgb(114, 110, 110);
+  }
+  .teach-desc{
+    text-align: center;
+  }
+  .teach-item h3{
+    font-weight: bold;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 17px;
+    padding-top: 12px;
+  }
+  .teach-item .teach-desc span{
+    color: rgb(97, 93, 93);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .teach-social{
+    font-size: 40px;
+    margin: 10px 0;
+  }
+}
+@media (max-width: 450px){
+  .about{
+    margin-top: 20%;
+  }
+  .sin-rows .sin-items{
+    width: 650px;
+    margin: 10px 0;
+  }
+}
+@media (max-width: 300px){
+  .about{
+    margin-top: 25%;
+  }
+}
 .breadcrumbs ol li + li {
   padding-left: 10px;
 }
@@ -479,6 +573,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
 }
 .sin-items{
   position: relative;
@@ -734,49 +829,56 @@ section {
   max-width: 256px;
 }
 .team-rows .team-item img{
+  width: 100%;
   max-width: 256px;
 }
-.team-rows .team-item .team-social{
-  opacity: 0;
-  position: absolute;
-  display: flex;
-  bottom: 21%;
-  left: 50%;
-  transition: all .4s;
-  transform: translateX(-50%);
-}
-.team-rows .team-item:hover .team-social{
-  opacity: 1;
-  bottom: 24%;
-}
-.team-social .icon{
-  font-size: 35px;
-  margin: 0 6px 0 6px;
-  color: white;
-  transition: color .3s;
-}
-.team-social .icon:hover{
-  color: rgb(255, 115, 0);
-}
-.team-rows .team-item .team-desc{
-  padding: 12px 15px;
-  transition: all .4s;
-}
-.team-rows .team-item:hover .team-desc{
-  box-shadow: 0 0 30px black;
-  width: 100%;
-  position: absolute;
-}
-.team-desc h2{
-  font-size: 15px;
-  letter-spacing: 1px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 0;
-}
-.team-desc span{
-  margin: 0;
-  font-size: 12px
+@media (min-width: 768px){
+  .team-social-mobile{
+    display: none
+  }
+  .team-rows .team-item .team-social{
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    bottom: 21%;
+    left: 50%;
+    transition: all .4s;
+    transform: translateX(-50%);
+  }
+  .team-rows .team-item:hover .team-social{
+    opacity: 1;
+    bottom: 24%;
+  }
+  .team-rows .team-item:hover .team-desc{
+    box-shadow: 0 0 30px black;
+    width: 100%;
+    position: absolute;
+  }
+  .team-social .icon{
+    font-size: 35px;
+    margin: 0 6px 0 6px;
+    color: rgb(255, 255, 255);
+    transition: color .2s;
+  }
+  .team-social .icon:hover{
+    color: rgb(235, 111, 11);
+  }
+  .team-rows .team-item .team-desc{
+    padding: 12px 15px;
+    transition: all .4s;
+  }
+  .team-desc h2{
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .team-desc span{
+    margin: 0;
+    font-size: 12px
+  }
+
 }
 
 /*--------------------------------------------------------------
@@ -788,44 +890,44 @@ section {
   justify-content: center;
   flex-wrap: wrap;
 }
-.teach-rows .teach-item{
-  margin: 25px;
-  align-items: center;
-  display: flex;
-  width: 470px;
-  word-wrap: break-word;
-  border-radius: 20px;
-  box-shadow: 0 0 30px rgb(176, 170, 170);
-  background-color: rgb(255, 255, 255);
-  overflow: hidden;
+@media(min-width: 480px){
+  .teach-rows .teach-item{
+    margin: 25px;
+    align-items: center;
+    display: flex;
+    width: 470px;
+    word-wrap: break-word;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgb(176, 170, 170);
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+  }
+  .teach-rows .teach-item img{
+    width: 245px;
+    box-shadow: 0 0 10px rgb(130, 126, 126);
+    margin: 0 auto;
+  }
+  .teach-rows .teach-item .teach-desc{
+    padding: 0 18px 0 24px;
+  }
+  .teach-rows .teach-item .teach-desc h3{
+    font-weight: bold;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 17px;
+  }
+  .teach-rows .teach-item .teach-desc span{ 
+    color: rgb(97, 93, 93);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .teach-rows .teach-item .teach-desc .teach-social{
+    margin-top: 30px;
+    font-size: 25px;
+    display: flex;
+    justify-content: start;
+  }
 }
-.teach-rows .teach-item img{
-  width: 245px;
-  box-shadow: 0 0 10px rgb(130, 126, 126);
-  margin: 0 auto;
-}
-.teach-rows .teach-item .teach-desc{
-  padding: 0 18px 0 24px;
-}
-.teach-rows .teach-item .teach-desc h3{
-  font-weight: bold;
-  align-items: center;
-  text-transform: uppercase;
-  font-size: 17px;
-}
-.teach-rows .teach-item .teach-desc span{ 
-  color: rgb(97, 93, 93);
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.teach-rows .teach-item .teach-desc .teach-social{
-  margin-top: 30px;
-  font-size: 25px;
-  display: flex;
-  justify-content: start;
-}
-.teach-social i:first-child{
-  margin-right: 20px;
-}
+
 
 /*--------------------------------------------------------------
 # ESCOLA
@@ -845,7 +947,7 @@ section {
 }
 .school-item img{
   width: 100%;
-  transition: transform .2s;
+  transition: transform .4s;
 }
 .school-item .school-desc{
   position: absolute;
@@ -854,7 +956,7 @@ section {
   width: 100%;
   padding: 12px 15px;
   opacity: 0;
-  transition: all .2s;
+  transition: all .4s;
 }
 .school-item:hover .school-desc{
   opacity: 1;
@@ -862,7 +964,6 @@ section {
 }
 .school-item:hover img{
   transform: scale(1.1);
-  filter: blur(1px)
 }
 .school-item .school-desc h3{
   font-size: 15px;
