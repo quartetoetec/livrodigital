@@ -203,7 +203,7 @@ section {
   transition: 0.5s;
   z-index: 997;
   background: rgb(42, 44, 57);
-  box-shadow: 0 0 30px black;
+  box-shadow: 0 0 20px black;
 }
 #header.header-scrolled {
   background: rgb(42, 44, 57);
@@ -412,12 +412,9 @@ section {
 /*--------------------------------------------------------------
 # INTRODUÇÃO
 --------------------------------------------------------------*/
-
-.about {
-  padding-top: 90px;
-  background: linear-gradient(0deg, #2a2c39 0%, #33364a 100%);
+.about{
+  padding-top: 6%;
 }
-
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
@@ -473,13 +470,6 @@ section {
   text-decoration: none;
 }
 
-.about .section-title h2, .about .section-title p{
-  color: aliceblue;
-}
-
-.about p, .about li{
-  color: rgb(211, 211, 211);
-}
 
 /*--------------------------------------------------------------
 # SINOPSES
@@ -492,7 +482,7 @@ section {
 }
 .sin-items{
   position: relative;
-  box-shadow: 0 0 24px rgb(95, 94, 94);
+  box-shadow: 0 0 24px rgb(179, 173, 173);
   width: 360px;
   border-radius: 12px;
   text-align: center;
@@ -510,22 +500,29 @@ section {
 .sin-desc{
   position: absolute;
   background-color: rgba(219, 84, 26);
-  margin-bottom: 0;
   padding: 12px 0;
-  height: 50px;
+  display: flex;
+  align-items: center;
+  height: 45px;
+  text-align: center;
   bottom: 0;
+  justify-content: center;
   width: 100%;
-  transition: all .4s;
+  transition: all .2s ease-out;
 }
 .sin-desc:hover{
-  background-color: rgb(156, 60, 18);
-}
-.sin-desc:hover span{
-  padding-top: 14px;
+  background-color: rgb(203, 70, 14);
+  height: 50px;
+  box-shadow: 0 0 24px rgb(113, 109, 109);
 }
 .sin-desc span{
   color: white;
   font-weight: 600;
+}
+.sin-desc .icon{
+  font-size: 23px;
+  margin-right: 7px;
+  color: #fff;
 }
 .spacer{
   background-color: rgba(0,0,0,0);
@@ -542,7 +539,7 @@ section {
 }
 .sin-icon{
   font-size: 30px;
-  color:rgb(219, 84, 26);
+  color:rgb(203, 70, 14);
   padding: 10px 0;
 }
 
@@ -565,7 +562,7 @@ section {
   flex-direction: column;
   text-align: center;
   position: relative;
-  height: 60vh;
+  height: 80vh;
   padding-top: 60px;
 }
 
@@ -723,239 +720,166 @@ section {
 # EQUIPE
 --------------------------------------------------------------*/
 
-.team {
-  background: #fff;
-  padding: 60px 0;
-}
-
 .team-rows{
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  justify-content: center;
 }
-
-.team .member {
-  margin-bottom: 20px;
+.team-rows .team-item{
+  box-shadow: 0 0 30px rgb(162, 156, 156);
+  border-radius: 12px;
   overflow: hidden;
-  border-radius: 5px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-.team .member .member-img {
   position: relative;
-  overflow: hidden;
+  margin: 20px;
+  max-width: 256px;
 }
-
-.team .member .social {
-  position: absolute;
-  left: 0;
-  bottom: 30px;
-  right: 0;
+.team-rows .team-item img{
+  max-width: 256px;
+}
+.team-rows .team-item .team-social{
   opacity: 0;
-  transition: ease-in-out 0.3s;
+  position: absolute;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  bottom: 21%;
+  left: 50%;
+  transition: all .4s;
+  transform: translateX(-50%);
 }
-
-.team .member .social a {
-  transition: color 0.3s;
-  margin: 0 3px;
-  border-radius: 50px;
-  width: 36px;
-  height: 36px;
-  background: rgba(239, 102, 3, 0.8);
-  transition: ease-in-out 0.3s;
-  color: #fff;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.team .member .social a:hover {
-  background: #fc8129;
-}
-
-.team .member .social i {
-  font-size: 18px;
-  line-height: 0;
-}
-
-.team .member .member-info {
-  display: block;
-  word-wrap: break-word;
-  padding: 25px 25px;
-}
-
-.team .member .member-info h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 18px;
-  color: #2a2c39;
-}
-
-.team .member .member-info span {
-  display: block;
-  font-size: 13px;
-  font-weight: 400;
-  color: #aaaaaa;
-}
-
-.team .member:hover .social {
+.team-rows .team-item:hover .team-social{
   opacity: 1;
-  bottom: 15px;
+  bottom: 24%;
+}
+.team-social .icon{
+  font-size: 35px;
+  margin: 0 6px 0 6px;
+  color: white;
+  transition: color .3s;
+}
+.team-social .icon:hover{
+  color: rgb(255, 115, 0);
+}
+.team-rows .team-item .team-desc{
+  padding: 12px 15px;
+  transition: all .4s;
+}
+.team-rows .team-item:hover .team-desc{
+  box-shadow: 0 0 30px black;
+  width: 100%;
+  position: absolute;
+}
+.team-desc h2{
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+.team-desc span{
+  margin: 0;
+  font-size: 12px
 }
 
 /*--------------------------------------------------------------
 # PROFESSORES
 --------------------------------------------------------------*/
 
-.pricing{
-  background: linear-gradient(0deg, #2a2c39 0%, #33364a 100%);
-}
-.pricing .section-title h2, .about .section-title p{
-  color: aliceblue;
-}
-.pricing p, .about li{
-  color: white;
-}
 .teach-rows{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.teach-item{
-  width: 260px;
+.teach-rows .teach-item{
   margin: 25px;
   align-items: center;
-  border-radius: 5px;
-  height: 370px;
+  display: flex;
+  width: 470px;
+  word-wrap: break-word;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgb(176, 170, 170);
   background-color: rgb(255, 255, 255);
   overflow: hidden;
-  transition: transform .3s;
 }
-.teach-item:hover{
-  transform: translateY(-5px);
+.teach-rows .teach-item img{
+  width: 245px;
+  box-shadow: 0 0 10px rgb(130, 126, 126);
+  margin: 0 auto;
 }
-.teach-item img{
-  width: 260px;
-  display: flex;
-  margin: 0 auto
+.teach-rows .teach-item .teach-desc{
+  padding: 0 18px 0 24px;
 }
-.teach-item h3{
+.teach-rows .teach-item .teach-desc h3{
   font-weight: bold;
   align-items: center;
-  padding-left: 15px;
-  margin-top: 15px;
   text-transform: uppercase;
   font-size: 17px;
 }
-.teach-item span{
-  padding-left: 15px;
+.teach-rows .teach-item .teach-desc span{ 
   color: rgb(97, 93, 93);
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.teach-rows .teach-item .teach-desc .teach-social{
+  margin-top: 30px;
+  font-size: 25px;
+  display: flex;
+  justify-content: start;
+}
+.teach-social i:first-child{
+  margin-right: 20px;
 }
 
 /*--------------------------------------------------------------
 # ESCOLA
 --------------------------------------------------------------*/
-
-.portfolio #portfolio-flters {
-  list-style: none;
-  margin-bottom: 20px;
+.school-row{
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
 }
-
-.portfolio #portfolio-flters li {
-  cursor: pointer;
-  display: inline-block;
-  margin: 0 0 10px 10px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1;
-  text-transform: uppercase;
-  color: #444444;
-  transition: 0.3s ease-in-out;
-}
-
-.portfolio #portfolio-flters li::before {
-  content: "[";
-  margin-right: 6px;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 400;
-  transition: 0.3s ease-in-out;
-}
-
-.portfolio #portfolio-flters li::after {
-  content: "]";
-  margin-left: 6px;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 400;
-  transition: 0.3s ease-in-out;
-}
-
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #ef6603;
-}
-
-.portfolio #portfolio-flters li.filter-active::before, .portfolio #portfolio-flters li.filter-active::after {
-  color: #ef6603;
-}
-
-.portfolio .portfolio-item {
-  margin-bottom: 30px;
-}
-
-.portfolio .portfolio-item .portfolio-img {
-  border-radius: 11px;
-  box-shadow: 0 0 30px rgb(107, 106, 106);
+.school-item{
+  width: 400px;
+  position: relative;
+  border-radius: 16px;
+  margin: 16px;
   overflow: hidden;
+  box-shadow: 0 0 24px rgb(184, 180, 180);
 }
-
-.portfolio .portfolio-item .portfolio-img img {
-  transition: 0.2s ease-in-out;
+.school-item img{
+  width: 100%;
+  transition: transform .2s;
 }
-
-.portfolio .portfolio-item .portfolio-info {
-  opacity: 0;
+.school-item .school-desc{
   position: absolute;
-  left: 13px;
   bottom: 0;
-  z-index: 3;
-  right: 13px;
-  border-bottom-right-radius: 12px;
-  border-bottom-left-radius: 12px;
-  transition: ease-in-out 0.3s;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 10px 15px;
+  left: 0;
+  width: 100%;
+  padding: 12px 15px;
+  opacity: 0;
+  transition: all .2s;
 }
-
-.portfolio .portfolio-item .portfolio-info h4 {
-  font-size: 18px;
-  color: #fff;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 0px;
-}
-
-.portfolio .portfolio-item .portfolio-info p {
-  color: #be9371;
-  font-size: 14px;
-  margin-bottom: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-}
-
-.portfolio .portfolio-item:hover .portfolio-img img {
-  transform: scale(1.09);
-}
-
-.portfolio .portfolio-item:hover .portfolio-info {
+.school-item:hover .school-desc{
   opacity: 1;
+  background-image: radial-gradient(rgb(37, 33, 33), rgb(41, 38, 38))
 }
-
+.school-item:hover img{
+  transform: scale(1.1);
+  filter: blur(1px)
+}
+.school-item .school-desc h3{
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: 0;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.school-item .school-desc span{
+  font-size: 10px;
+  color: aliceblue;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
 /*--------------------------------------------------------------
-# Footer
+# FOOTER
 --------------------------------------------------------------*/
 
 #footer {
@@ -964,6 +888,7 @@ section {
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
+  box-shadow: 0 0 30px rgb(108, 105, 105);
 }
 
 #footer h3 {
