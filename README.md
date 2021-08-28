@@ -10,7 +10,7 @@ O material do site foi pego do site <b>BootstrapMade</b> e modificado pelos inte
   </ul>
   
 Caso você queira comparar com o template original, basta clicar <a href="https://bootstrapmade.com/demo/Selecao/">aqui</a>. <br>
-<b>Você pode acessar o site clicando <a href="https://quartetoetec.github.io/livrodigital/">aqui</a>!</b> 
+Você pode acessar o site clicando <a href="https://quartetoetec.github.io/livrodigital/">aqui</a>!
 
 <hr>
 
