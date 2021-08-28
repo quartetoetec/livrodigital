@@ -3,12 +3,18 @@
 O material do site foi pego do site <b>BootstrapMade</b> e modificado pelos integrantes deste grupo:
 
   <ul>
-  <li>Eduardo Ribas</li>
-  <li>Gabriel Sampaio</li>
+  <li>Eduardo Ribas - <a href="https://github.com/ribas-codes">Github</a></li>
+  <li>Gabriel Sampaio - <a href="https://github.com/gabrielsampaio1216">Github</a></li>
   <li>Gabryel Henrique</li>
   <li>Alisson Soares</li>
   </ul>
   
+Caso você queira comparar com o template original, basta clicar <a href="https://bootstrapmade.com/demo/Selecao/">aqui</a>. <br>
 <b>Você pode acessar o site clicando <a href="https://quartetoetec.github.io/livrodigital/">aqui</a>!</b> 
 
 <hr>
+
+  * Template Name: Selecao - v4.3.0
+  * Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
