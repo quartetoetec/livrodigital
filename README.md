@@ -5,7 +5,7 @@ O material do site foi pego do site <b>BootstrapMade</b> e modificado pelos inte
   <ul>
   <li>Eduardo Ribas - <a href="https://github.com/ribas-codes">Github</a></li>
   <li>Gabriel Sampaio - <a href="https://github.com/gabrielsampaio1216">Github</a></li>
-  <li>Gabryel Henrique</li>
+  <li>Gabryel Henrique <a href="https://github.com/projetos-Gabryel">Github</a></li>
   <li>Alisson Soares - <a href="https://github.com/projetos-Alisson">Github</a></li>
   </ul>
   
