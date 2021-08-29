@@ -37,7 +37,9 @@
     margin-top: 10px;
   }
 }
-
+@media (max-width: 1399px){
+  
+}
 @media (max-width: 1200px){
   .about{
     margin-top: 6%;
@@ -122,14 +124,14 @@
   .about{
     margin-top: 20%;
   }
-  .sin-rows .sin-items{
-    width: 650px;
-    margin: 10px 0;
-  }
 }
 @media (max-width: 300px){
   .about{
     margin-top: 25%;
+  }
+  .sin-rows .sin-items{
+    width: 650px;
+    margin: 10px 0;
   }
 }
 .breadcrumbs ol li + li {
@@ -828,10 +830,23 @@ section {
   margin: 20px;
   max-width: 256px;
 }
-.team-rows .team-item img{
-  width: 100%;
-  max-width: 256px;
+.team-gamb{
+  width: 256px;
+  height: 256px;
 }
+.team-gamb#gamb-1{
+  background: url("../img/team/team-1.jpg");
+}
+.team-gamb#gamb-2{
+  background: url("../img/team/team-2.jpg");
+}
+.team-gamb#gamb-3{
+  background: url("../img/team/team-3.jpg");
+}
+.team-gamb#gamb-4{
+  background: url("../img/team/team-4.jpg");
+}
+
 @media (min-width: 768px){
   .team-social-mobile{
     display: none
@@ -849,23 +864,25 @@ section {
     opacity: 1;
     bottom: 24%;
   }
-  .team-rows .team-item:hover .team-desc{
-    box-shadow: 0 0 30px black;
-    width: 100%;
-    position: absolute;
-  }
+
   .team-social .icon{
     font-size: 35px;
     margin: 0 6px 0 6px;
     color: rgb(255, 255, 255);
-    transition: color .2s;
+    transition: color .6s;
   }
   .team-social .icon:hover{
     color: rgb(235, 111, 11);
   }
   .team-rows .team-item .team-desc{
-    padding: 12px 15px;
     transition: all .4s;
+    padding: 15px 12px;
+    box-shadow: 0 0 1px black;
+  }
+  .team-rows .team-item:hover .team-desc{
+    width: 100%;
+    box-shadow: 0 0 30px black;
+    position: absolute;
   }
   .team-desc h2{
     font-size: 15px;
