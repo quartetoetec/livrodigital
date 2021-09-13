@@ -301,6 +301,16 @@ section {
   background: rgb(42, 44, 57);
   box-shadow: 0 0 20px black;
 }
+
+.logo{
+  width: 250px; 
+  height: 100px; 
+  float: left;
+  background: url(../img/logotipo.png) center center/200px no-repeat;}
+  font-size: 0;
+} 
+
+
 #header.header-scrolled {
   background: rgb(42, 44, 57);
 }
