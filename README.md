@@ -19,8 +19,4 @@ Você pode acessar o site clicando <a href="https://quartetoetec.github.io/livro
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
 
-<h3>PLANEJAMENTO POR SEMANA<h3>
-  <p>1ª semana: Escolhemos o template e fizemos upload com algumas correções</p>
-  <p>2ª semana: Organizamos a estrutura do site</p>
-  <p>1ª semana: Começamos a adicionar conteúdo</p>
-  <p>1ª semana: Terminamos a estrutura e agora só resta terminarmos o conteúdo</p>
+
