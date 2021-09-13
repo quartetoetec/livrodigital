@@ -22,6 +22,7 @@ Você pode acessar o site clicando <a href="https://quartetoetec.github.io/livro
  <hr>
 
 Planejamento semanal: 
+
 22/08 - 28/08: Gabriel e Eduardo subiram o template e realizaram algumas correções e ajustes na estrutura do site (ajustamos as cores, barra de rolagem, header, cards, icons e sections)
 
 29/08 - 04/09: Alisson subiu a sinopse do seu conto e começou a trabalhar na logo do site.
