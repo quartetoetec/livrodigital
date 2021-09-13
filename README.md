@@ -18,6 +18,8 @@ Você pode acessar o site clicando <a href="https://quartetoetec.github.io/livro
   * Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
+ 
+ <hr>
 
 Planejamento semanal: 
 22/08 - 28/08: Gabriel e Eduardo subiram o template e realizaram algumas correções e ajustes na estrutura do site (ajustamos as cores, barra de rolagem, header, cards, icons e sections)
