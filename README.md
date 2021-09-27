@@ -33,4 +33,4 @@ Planejamento semanal:
 
 19/09 - 25/09: Eduardo finalizou a parte "Equipe".
 
-26/09 - 28/09: Gabriel e Eduardo finalizaram a parte do Conto.
+26/09 - 28/09: Gabriel e Eduardo finalizaram a parte do Livro de contos.
