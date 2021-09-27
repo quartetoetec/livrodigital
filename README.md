@@ -23,8 +23,14 @@ Você pode acessar o site clicando <a href="https://quartetoetec.github.io/livro
 
 Planejamento semanal: 
 
-22/08 - 28/08: Gabriel e Eduardo subiram o template e realizaram algumas correções e ajustes na estrutura do site (ajustamos as cores, barra de rolagem, header, cards, icons e sections)
+22/08 - 28/08: Gabriel e Eduardo subiram o template e realizaram algumas correções e ajustes na estrutura do site (ajustamos as cores, barra de rolagem, header, cards, icons e sections).
 
 29/08 - 04/09: Alisson subiu a sinopse do seu conto e começou a trabalhar na logo do site.
 
 05/09 - 11/09: Eduardo subiu o favicon do nosso site. Alisson subiu a logo do site.
+
+12/09 - 18/09: Gabryel subiu a parte "O que é um conto?" e as suas sinopses.
+
+19/09 - 25/09: Eduardo finalizou a parte "Equipe".
+
+26/09 - 28/09: Gabriel e Eduardo finalizaram a parte do Conto.
