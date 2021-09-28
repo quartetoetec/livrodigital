@@ -561,7 +561,7 @@ img{
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 1px;
-  display: block;
+  display: inline-block;
   padding: 12px 32px;
   border-radius: 5px;
   transition: 0.3s;
