@@ -250,7 +250,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 section {
   margin-top: 20px;
-  padding: 60px 0;
+  padding: 30px 0;
   overflow: hidden;
 }
 
@@ -524,6 +524,19 @@ img{
 .about{
   padding-top: 6%;
 }
+
+.col-lg-6{
+  flex: 0.8 0 auto;
+  width: 20%;
+  display: flex;
+}
+
+@media (max-width: 285px) {
+  .col-lg-6{
+    flex-wrap: wrap;
+  }
+}
+
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
@@ -937,6 +950,10 @@ img{
     font-size: 25px;
     display: flex;
     justify-content: start;
+  }
+
+  .teach-social .bi{
+    margin: 0 15px 0;
   }
 }
 
