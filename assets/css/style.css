@@ -783,7 +783,7 @@ img{
 
 @media (max-width: 768px) {
   #hero .carousel-container {
-    height: 90vh;
+    height: 200%;
   }
   #hero h2 {
     font-size: 28px;
