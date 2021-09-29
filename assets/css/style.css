@@ -702,7 +702,7 @@ img{
   flex-direction: column;
   text-align: center;
   position: relative;
-  height: 1400vh;
+  height: 200%;
   padding-top: 60px;
 }
 
