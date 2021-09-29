@@ -788,6 +788,16 @@ img{
   #hero h2 {
     font-size: 28px;
   }
+
+  p .sum{
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  #hero .carousel-container {
+    height: 200%;
+  }
 }
 
 .hero-waves {
